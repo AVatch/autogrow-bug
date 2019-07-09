@@ -9,6 +9,24 @@
 <ion-content>
   <div class="ion-padding">
     The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    <p>
+      If you get lost, the
+      <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/"
+        >docs</a
+      >
+      will be your guide.
+    </p>
+
+    <form [formGroup]="form" (ngSubmit)="onFormSubmit($event)">
+      <ion-textarea
+        formControlName="text"
+        autocapitalize="sentences"
+        placeholder="Autogrow"
+        rows="1"
+        autoGrow="true"
+        autofocus="true"
+      ></ion-textarea>
+      <ion-button type="submit">Submit</ion-button>
+    </form>
   </div>
 </ion-content>

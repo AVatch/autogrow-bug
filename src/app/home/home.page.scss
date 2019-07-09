@@ -1,1 +1,9 @@
+:host {
+  ion-content {
+    --background: var(--ion-color-secondary);
 
+    ion-textarea {
+      background: white;
+    }
+  }
+}
